@@ -7,7 +7,6 @@ public class Task3 {
         System.out.println(a + " and " + b + " and " + c);
         minAbsolute(a, b, c);
     }
-
     private static void minAbsolute(float a, float b, float c) {
         float n1 = Math.abs(a);
         float n2 = Math.abs(b);
