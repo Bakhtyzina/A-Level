@@ -6,6 +6,7 @@ public class Task2 {
 
     private static boolean evenNumber(int n) {
         return n % 2 == 0 ? true : false;
+
     }
 
 }
