@@ -10,8 +10,6 @@ public class HW3Task1 {
         String newText = delSpace(text);
         System.out.println(newText);
         System.out.println("It's palindrome. It's " + palindrome(newText));
-
-
     }
 
     private static String delSpace(String text) {
