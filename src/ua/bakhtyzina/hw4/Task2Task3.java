@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Task2Task3 {
     public static void main(String[] args) {
         int[] numbers = generateArray();
-        //System.out.println(Arrays.toString(numbers));
         primeNumber(numbers);
         compositeNumber(numbers);
     }
