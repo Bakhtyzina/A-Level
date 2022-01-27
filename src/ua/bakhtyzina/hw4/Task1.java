@@ -9,7 +9,6 @@ public class Task1 {
         System.out.println(Arrays.toString(numbers));
         averageValue(numbers);
     }
-
     private static int[] generateArray() {
         int[] array = new int[400];
         for (int i = 0; i < array.length; i++) {
