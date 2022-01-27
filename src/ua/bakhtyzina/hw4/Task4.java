@@ -28,3 +28,4 @@ public class Task4 {
         return array;
     }
 }
+
