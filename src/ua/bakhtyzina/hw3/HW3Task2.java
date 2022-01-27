@@ -1,3 +1,5 @@
+package ua.bakhtyzina.hw3;
+
 import java.util.Scanner;
 
 
