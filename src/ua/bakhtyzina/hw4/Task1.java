@@ -10,6 +10,7 @@ public class Task1 {
         averageAr(numbers);
         averageGeom(numbers);
     }
+
     private static int[] generateArray() {
         int[] array = new int[400];
         for (int i = 0; i < array.length; i++) {
@@ -26,6 +27,7 @@ public class Task1 {
         }
         System.out.println("Arithmetic mean = " + ar / numbers.length);
     }
+
     private static void averageGeom(int[] numbers) {
         int[] array = Arrays.copyOf(numbers, numbers.length);
         double geom = 1.0;
