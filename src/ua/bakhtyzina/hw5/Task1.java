@@ -10,7 +10,6 @@ public class Task1 {
             System.out.println(Arrays.toString(array[i]));
         }
     }
-
     private static void indexValueArray(int[][] array) {
         int n = 1;
         for (int i = 0; i < array.length; i++) {
