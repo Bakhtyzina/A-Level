@@ -18,11 +18,10 @@ public class Task2Task3 {
     }
 
     private static void primeNumber(int[] numbers) {
-        int[] array = Arrays.copyOf(numbers, numbers.length);
         int composite = 0;
         int prime = 0;
         int n = 0;
-        for (int i : array) {
+        for (int i : numbers) {
             if (i == 1) {
                 n++;
             }
@@ -39,9 +38,8 @@ public class Task2Task3 {
     }
 
     private static void compositeNumber(int[] numbers) {
-        int[] array = Arrays.copyOf(numbers, numbers.length);
         int composite = 0;
-        for (int i : array) {
+        for (int i : numbers) {
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
                     composite++;
