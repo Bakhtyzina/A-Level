@@ -8,7 +8,6 @@ public class Task2Task3 {
         primeNumber(numbers);
         compositeNumber(numbers);
     }
-
     private static int[] generateArray() {
         int[] array = new int[1000];
         for (int i = 0; i < array.length; i++) {
