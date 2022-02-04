@@ -20,21 +20,20 @@ public class Task1 {
     }
 
     private static void averageAr(int[] numbers) {
-        int[] array = Arrays.copyOf(numbers, numbers.length);
         double ar = 0;
-        for (int i = 0; i < array.length; i++) {
-            ar += array[i];
+        for (int j : numbers) {
+            ar += j;
         }
         System.out.println("Arithmetic mean = " + ar / numbers.length);
     }
 
     private static void averageGeom(int[] numbers) {
-        int[] array = Arrays.copyOf(numbers, numbers.length);
         double geom = 1.0;
-        for (int i = 0; i < array.length; i++) {
-            geom *= array[i];
+        for (int j : numbers) {
+            geom *= j;
         }
-        System.out.println("Geometric mean = " + Math.pow(geom, 1 / numbers.length));
+        System.out.println("Geometric mean = " + Math.pow(geom, (double) 1 / numbers.length));
+
     }
 
 }
