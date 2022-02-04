@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Task2Task3 {
     public static void main(String[] args) {
         int[] numbers = generateArray();
-        //System.out.println("array = " + Arrays.toString(numbers));
         primeNumber(numbers);
         compositeNumber(numbers);
     }
@@ -22,25 +21,29 @@ public class Task2Task3 {
         int[] array = Arrays.copyOf(numbers, numbers.length);
         int composite = 0;
         int prime = 0;
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 2; j < array[i]; j++) {
-                if (array[i] % j == 0) {
+        int n = 0;
+        for (int i : array) {
+            if (i == 1) {
+                n++;
+            }
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
                     composite++;
                     break;
                 }
             }
+
         }
-        prime = numbers.length - composite;
+        prime = numbers.length - composite - n;
         System.out.println("The number of PRIME numbers = " + prime);
     }
 
     private static void compositeNumber(int[] numbers) {
         int[] array = Arrays.copyOf(numbers, numbers.length);
         int composite = 0;
-        int prime = 0;
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 2; j < array[i]; j++) {
-                if (array[i] % j == 0) {
+        for (int i : array) {
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
                     composite++;
                     break;
                 }
