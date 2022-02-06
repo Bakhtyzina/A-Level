@@ -26,11 +26,7 @@ public class Car {
         return manufacturer + "; " + engine + "; " + colour + "; " + petrol;
     }
 
-    public Car() {
-    }
-
     public Car(String manufacturer, String engine, String colour) {
-        this();
         this.manufacturer = manufacturer;
         this.engine = engine;
         this.colour = colour;
