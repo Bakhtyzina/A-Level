@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class Task4Hw4Test {
     Task4Hw4 target;
 
@@ -31,6 +29,7 @@ class Task4Hw4Test {
             if (array[i] % 2 == 0) {
                 Assertions.assertEquals(0, array[i]);
             }
+
         }
     }
 }
